@@ -1,0 +1,34 @@
+.container__search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+}
+.container_input__search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.container_input__search input {
+  background-color: #f1f1f1;
+  padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  color: #0e1129;
+}
+.container_input__search button {
+  position: absolute;
+  right: 0.6rem;
+  top: .3rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  border: none;
+  background-color: transparent;
+}
