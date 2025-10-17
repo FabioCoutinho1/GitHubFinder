@@ -1,0 +1,11 @@
+import React from "react";
+
+const Erro = () => {
+  return (
+    <div>
+      <p>Usuario nao encontrado</p>
+    </div>
+  );
+};
+
+export default Erro;
