@@ -13,10 +13,10 @@
 }
 
 .image__user {
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
   border-radius: 50%;
-  border: 2px solid purple;
+  border: 0.2rem solid purple;
 }
 
 .infos__user {
@@ -52,6 +52,6 @@
 .style_bar__user {
   height: 100%;
   width: 0.1rem;
-  border-radius: 50%;
+  border-radius: 0.1rem;
   background-color: aliceblue;
 }

@@ -5,3 +5,10 @@ export type UserProps = {
     followers: number;
     following: number;
 }
+
+export interface Repo {
+  id: number;
+  name: string;
+  html_url: string;
+  description: string | null;
+}

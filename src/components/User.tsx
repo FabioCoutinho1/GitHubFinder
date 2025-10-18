@@ -28,6 +28,9 @@ const User = ({
 
         <div className={classes.style_bar__user}></div>
         <div className={classes.infos__user}>
+          <div>
+            <p>{login}</p>
+          </div>
           <div className={classes.follw_grup__user}>
             <div className={classes.follow__user}>
               <p>Seguidores:</p>

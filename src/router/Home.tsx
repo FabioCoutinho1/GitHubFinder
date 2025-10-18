@@ -1,13 +1,15 @@
 import type { UserProps } from "../types/user";
 import Search from "../components/Search";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import User from "../components/User";
 import Erro from "../components/Erro";
 
 const Home = () => {
   const [user, setUser] = useState<UserProps | null>(null);
   const [error, setError] = useState(false);
+
+  useEffect(()=>{},[login])
 
   const loadUser = async (userName: string) => {
     setUser(null);

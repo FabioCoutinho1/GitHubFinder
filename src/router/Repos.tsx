@@ -1,11 +1,8 @@
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 
-export interface Repo {
-  id: number;
-  name: string;
-  html_url: string;
-  description: string | null;
-}
+import type { Repo } from "../types/user";
+import CompRepo from "../components/CompRepo";
+import { MdHome } from "react-icons/md";
 
 interface ReposLoaderData {
   login: string;
@@ -33,15 +30,12 @@ const Repos = () => {
   return (
     <div>
       <h2>Repositorios de {login}</h2>
+      <Link to={`/`}> <MdHome/></Link>
 
       {repos.map((repo) => (
-        <li key={repo.id}>
-          <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-            {repo.name}
-          </a>
-
-          {repo.description && <p>{repo.description}</p>}
-        </li>
+        <div>
+          <CompRepo {...repo}/>
+        </div>
       ))}
     </div>
   );

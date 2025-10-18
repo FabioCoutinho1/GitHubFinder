@@ -1,0 +1,11 @@
+.item__comprepo{
+    list-style: none;
+    margin-bottom: 1rem;
+    background-color: #334199;
+    padding: 0.6rem 1rem;
+    border-radius: .5rem;
+}
+
+.item__comprepo:first-child{
+    margin-top: 1rem;
+}
