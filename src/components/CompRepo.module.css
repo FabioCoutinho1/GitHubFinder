@@ -1,11 +1,22 @@
-.item__comprepo{
-    list-style: none;
-    margin-bottom: 1rem;
-    background-color: #334199;
-    padding: 0.6rem 1rem;
-    border-radius: .5rem;
+.item__comprepo {
+  list-style: none;
+  margin-bottom: 1rem;
+  background-color: #334199;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
 }
 
-.item__comprepo:first-child{
-    margin-top: 1rem;
+.item__comprepo:first-child {
+  margin-top: 1rem;
+}
+
+.star__comprepo {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.grup_star_name__comprepo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
