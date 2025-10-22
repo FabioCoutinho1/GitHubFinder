@@ -3,6 +3,7 @@ import { Link, useLoaderData } from "react-router";
 import type { Repo } from "../types/user";
 import CompRepo from "../components/CompRepo";
 import { MdHome } from "react-icons/md";
+import { useMemo } from "react";
 
 import classes from "./Repos.module.css";
 
@@ -13,6 +14,12 @@ interface ReposLoaderData {
 
 const Repos = () => {
   const { login, repos } = useLoaderData() as ReposLoaderData;
+
+  const sortedRepos = useMemo(() => {
+    //memoriza o valor do sort pra evitar reenderização desnecessarias
+    return [...repos].sort((a, b) => b.stargazers_count - a.stargazers_count);
+  }, [repos]);
+  //so reenderiza se o useMemo notar uma mudaça no repos
 
   return (
     <div className={classes.container__repos}>
@@ -25,7 +32,7 @@ const Repos = () => {
         </Link>
       </div>
 
-      {repos.map((repo) => (
+      {sortedRepos.map((repo) => (
         <ul key={repo.id}>
           <CompRepo {...repo} />
         </ul>

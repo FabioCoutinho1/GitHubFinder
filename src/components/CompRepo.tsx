@@ -13,16 +13,14 @@ const CompRepo = ({
   return (
     <li key={id} className={classes.item__comprepo}>
       <a href={html_url} target="_blank" rel="noopener noreferrer">
-        <div className={classes.grup_star_name__comprepo}>
-          <p>{name}</p>
-
-          <div className={classes.star__comprepo}>
-            <MdStar />
-            <p>{stargazers_count}</p>
-          </div>
-        </div>
-        {description && <p>{description}</p>}
+        <p className={classes.name__comprepo}>{name}</p>
       </a>
+      
+      {description && <p className={classes.description__comprepo}> <span>Descrição: </span>{description}</p>}
+      <div className={classes.star__comprepo}>
+        <MdStar className={classes.star__icon} />
+        <p>{stargazers_count}</p>
+      </div>
     </li>
   );
 };
