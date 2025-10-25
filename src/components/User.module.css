@@ -26,10 +26,21 @@
   justify-content: space-evenly;
 }
 
+.location__grup {
+  display: flex;
+}
+
+.location__comprepo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
 .follw_grup__user {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .follow__user {

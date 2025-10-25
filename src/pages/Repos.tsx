@@ -33,9 +33,9 @@ const Repos = () => {
       </div>
 
       {sortedRepos.map((repo) => (
-        <ul key={repo.id}>
+        <div key={repo.id}>
           <CompRepo {...repo} />
-        </ul>
+        </div>
       ))}
     </div>
   );

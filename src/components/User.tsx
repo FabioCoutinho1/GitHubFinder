@@ -19,17 +19,19 @@ const User = ({
           src={avatar_url}
           alt="foto do usuario"
         />
-        {location && (
-          <p>
-            <MdLocationPin />
-            <span>{location}</span>
-          </p>
-        )}
 
         <div className={classes.style_bar__user}></div>
         <div className={classes.infos__user}>
           <div>
-            <p>{login}</p>
+            <p className={classes.login__user}>{login}</p>
+          </div>
+          <div className={classes.location__grup}>
+            {location && (
+              <p className={classes.location__comprepo}>
+                <MdLocationPin />
+                <span>{location}</span>
+              </p>
+            )}
           </div>
           <div className={classes.follw_grup__user}>
             <div className={classes.follow__user}>
