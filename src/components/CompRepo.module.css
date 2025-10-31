@@ -34,6 +34,8 @@
   text-align: left;
   font-size: 0.9rem;
   color: rgb(214, 214, 214);
+  white-space: break-word;
+  overflow-wrap: break-word;
 }
 
 .star__comprepo {

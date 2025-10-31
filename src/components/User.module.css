@@ -66,3 +66,29 @@
   border-radius: 0.1rem;
   background-color: aliceblue;
 }
+
+@media (max-width: 600px) {
+  .img_and_follow__user {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .image__user {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .infos__user {
+    gap: 1rem;
+  }
+
+  .follw_grup__user {
+    margin-bottom: 1.2rem;
+    flex-direction: row;
+  }
+
+  .location__grup{
+    align-items: center;
+    justify-content: center;
+  }
+}
