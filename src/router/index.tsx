@@ -6,26 +6,21 @@ import Repos from "../pages/Repos.tsx";
 import App from "../App.tsx";
 import Home from "../pages/Home.tsx";
 
-export const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <App />,
-      errorElement: <div>Algo deu Errado</div>,
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/repos/:login",
-          element: <Repos />,
-          loader: reposLoaders,
-        },
-      ],
-    },
-  ],
+export const router = createBrowserRouter([
   {
-    basename: "/GitHubFinder",
-  }
-);
+    path: "/",
+    element: <App />,
+    errorElement: <div>Algo deu Errado</div>,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/repos/:login",
+        element: <Repos />,
+        loader: reposLoaders,
+      },
+    ],
+  },
+]);
