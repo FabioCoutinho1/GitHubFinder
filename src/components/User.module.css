@@ -71,6 +71,7 @@
   .img_and_follow__user {
     flex-direction: column;
     gap: 0.8rem;
+
   }
 
   .image__user {
@@ -83,8 +84,12 @@
   }
 
   .follw_grup__user {
-    margin-bottom: 1.2rem;
     flex-direction: row;
+  }
+  
+  .more_repo__user{
+    display: flex;
+    justify-content: center;
   }
 
   .location__grup{
